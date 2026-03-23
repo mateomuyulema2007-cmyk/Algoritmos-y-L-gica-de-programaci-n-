@@ -21,7 +21,7 @@ int main() {
     penalizacion = errores * 4;
 
     bonificacion = 0;
-    if (extra == "1" || extra == "1" || extra == "1") {
+    if (extra == "1" ) {
         bonificacion += 15;
     }
     if (tiempo < 30) {
@@ -33,7 +33,7 @@ int main() {
         puntajeFinal = 0;
     }
 
-    if (copia == "1" || copia == "1" || copia == "1") {
+    if (copia == "1" ) {
         nivel = "Descalificado";
     } else {
         if (puntajeFinal >= 90) nivel = "Experto";

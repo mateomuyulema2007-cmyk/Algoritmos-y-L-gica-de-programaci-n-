@@ -1,1 +1,86 @@
+#include <iostream>
+#include <string>
+                   
+using namespace std;
 
+class Jean {
+public:
+
+    string codigo, color, talla, estado;
+    int cantidad_tenidos, humedad;
+    float precio;
+
+
+    void mostrarDatos() {
+        cout << "------ FICHA TECNICA DEL JEAN ------" << endl;
+        cout << "Codigo: " << codigo << " | Color: " << color << " | Talla: " << talla << endl;
+        cout << "Precio: $" << precio << " | Estado: " << estado << endl;
+        cout << "Cant. Tenidos: " << cantidad_tenidos << " | Humedad: " << humedad << "%" << endl;
+        cout << "------------------------------------" << endl;
+    }
+
+
+    void lavar() {
+        if (cantidad_tenidos > 0) {
+            cantidad_tenidos--;
+            cout << ">> Proceso de LAVADO completado (-1 tenido)." << endl;
+        } else {
+            cout << ">> Alerta: El jean ya no tiene mas procesos de tenido disponibles." << endl;
+        }
+    }
+
+
+    void secar() {
+        if (humedad >= 20) {
+            humedad -= 20;
+            cout << ">> Proceso de SECADO completado (-20% humedad)." << endl;
+        } else {
+            humedad = 0;
+            cout << ">> El jean ya esta completamente seco." << endl;
+        }
+    }
+};
+
+int main() {
+    Jean miJean;
+    int opcion;
+
+    cout << "--- Registro de Nuevo Jean ---" << endl;
+    cout << "Ingrese Codigo: "; cin >> miJean.codigo;
+    cout << "Ingrese Color: "; cin >> miJean.color;
+    cout << "Ingrese Talla: "; cin >> miJean.talla;
+    cout << "Ingrese Precio: "; cin >> miJean.precio;
+
+    miJean.cantidad_tenidos = 5;
+    miJean.humedad = 100;
+    miJean.estado = "Nuevo";
+
+    do {
+        cout << "MENU DE GESTION TEXTIL" << endl;
+        cout << "1. Mostrar datos del Jean" << endl;
+        cout << "2. Lavar Jean" << endl;
+        cout << "3. Secar Jean" << endl;
+        cout << "4. Salir" << endl;
+        cout << "Seleccione una opcion: ";
+        cin >> opcion;
+
+        switch(opcion) {
+            case 1:
+                miJean.mostrarDatos();
+                break;
+            case 2:
+                miJean.lavar();
+                break;
+            case 3:
+                miJean.secar();
+                break;
+            case 4:
+                cout << "Fin del proceso de produccion." << endl;
+                break;
+            default:
+                cout << "Opcion no valida." << endl;
+        }
+    } while(opcion != 4);
+
+    return 0;
+}

@@ -1,1 +1,24 @@
-codigo hecho por Alexander Guaman
+         #include <iostream>
+         using namespace std;
+
+         int main() {
+             int hora, minutos, segundos;
+             char respuesta;
+
+         do {
+              cout << " Registar Hora "<< endl;
+              cout << "Ingrese hora(00-24), minutos (00-59) y segundos(00-59): "<< endl;
+              cin >> hora ;
+              cin >> minutos ;
+              cin >> segundos ;
+              cout << "Hora registrada: " << hora << ":" << minutos << ":" << segundos << endl;
+
+              cout << "Desea cambiar la hora nuevamente? (s/n): ";
+              cin >> respuesta;
+
+         } while(respuesta == 's');
+          {
+             cout << "Sistema cerrado." << endl;
+          }
+             return 0;
+         }

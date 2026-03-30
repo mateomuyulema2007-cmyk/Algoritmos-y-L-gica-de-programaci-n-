@@ -17,7 +17,8 @@ Concepto: Programación Orientada a Objetos y migración de lógica.
 Basado en la estructura de una clase previa en Java, este programa en C++ gestiona los atributos de una prenda , incluyendo código, color, talla, precio y niveles de humedad. Incluye métodos específicos para simular procesos de lavado y secado de la tela.
 
 Especificaciones Técnicas
-Lenguaje: C++11 o superior.
+
+Lenguaje: C++
 
 Entorno de desarrollo: Code::Blocks .
 

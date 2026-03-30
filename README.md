@@ -10,7 +10,7 @@ Permite el ingreso de horas, minutos y segundos a través de consola. El sistema
 
 2. Sistema de Cuentas Bancarias
 Concepto: Manejo de arreglos de estructuras y menús interactivos.
-Programa diseñado para registrar a un cliente mediante su número de identificación (DNI). Permite la gestión de hasta tres cuentas bancarias independientes, habilitando funciones para consultar atributos, realizar depósitos, retiros y transferencias de saldo entre las cuentas registradas.
+Programa diseñado para registrar a un cliente mediante su número de identificación. Permite la gestión de hasta tres cuentas bancarias independientes, habilitando funciones para consultar atributos, realizar depósitos, retiros y transferencias de saldo entre las cuentas registradas.
 
 3. Gestión de Jean
 Concepto: Programación Orientada a Objetos y migración de lógica.

@@ -1,5 +1,7 @@
 Prácticas de Programación en C++
+
 Integrantes: Mateo Muyulema, Alejandro Villacres, Alexander Guaman
+
 Este repositorio contiene el desarrollo de diversos ejercicios de lógica y programación orientada a objetos realizados para la facultad de ingeniería. El objetivo es documentar el flujo de datos y la implementación de clases aplicadas a casos de estudio específicos.
 
 1. Control de Hora

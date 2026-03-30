@@ -24,5 +24,5 @@ Entorno de desarrollo: Code::Blocks .
 
 Formato: Código fuente digitalizado para reportes técnicos y documentación académica.
 
-Instrucciones
+Instrucciones:
 Para ejecutar los programas, compilar el archivo de interés y seguir las instrucciones en la terminal de comandos. El sistema permite la navegación fluida entre las opciones mediante entradas numéricas y de caracteres.

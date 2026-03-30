@@ -1,45 +1,7 @@
 #include <iostream>
-#include <string>
-                   
+#include "Jean.h"
+
 using namespace std;
-
-class Jean {
-public:
-
-    string codigo, color, talla, estado;
-    int cantidad_tenidos, humedad;
-    float precio;
-
-
-    void mostrarDatos() {
-        cout << "------ FICHA TECNICA DEL JEAN ------" << endl;
-        cout << "Codigo: " << codigo << " | Color: " << color << " | Talla: " << talla << endl;
-        cout << "Precio: $" << precio << " | Estado: " << estado << endl;
-        cout << "Cant. Tenidos: " << cantidad_tenidos << " | Humedad: " << humedad << "%" << endl;
-        cout << "------------------------------------" << endl;
-    }
-
-
-    void lavar() {
-        if (cantidad_tenidos > 0) {
-            cantidad_tenidos--;
-            cout << ">> Proceso de LAVADO completado (-1 tenido)." << endl;
-        } else {
-            cout << ">> Alerta: El jean ya no tiene mas procesos de tenido disponibles." << endl;
-        }
-    }
-
-
-    void secar() {
-        if (humedad >= 20) {
-            humedad -= 20;
-            cout << ">> Proceso de SECADO completado (-20% humedad)." << endl;
-        } else {
-            humedad = 0;
-            cout << ">> El jean ya esta completamente seco." << endl;
-        }
-    }
-};
 
 int main() {
     Jean miJean;
@@ -84,3 +46,47 @@ int main() {
 
     return 0;
 }
+
+
+//Biblioteca personal
+
+#ifndef JEAN_H
+#define JEAN_H
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Jean {
+public:
+    string codigo, color, talla, estado;
+    int cantidad_tenidos, humedad;
+    float precio;
+
+    void mostrarDatos() {
+        cout << "------ FICHA TECNICA DEL JEAN ------" << endl;
+        cout << "Codigo: " << codigo << " | Color: " << color << " | Talla: " << talla << endl;
+        cout << "Precio: $" << precio << " | Estado: " << estado << endl;
+        cout << "Cant. Tenidos: " << cantidad_tenidos << " | Humedad: " << humedad << "%" << endl;
+        cout << "------------------------------------" << endl;
+    }
+
+    void lavar() {
+        if (cantidad_tenidos > 0) {
+            cantidad_tenidos--;
+            cout << ">> Proceso de LAVADO completado (-1 tenido)." << endl;
+        } else {
+            cout << ">> Alerta: No hay mas procesos de tenido disponibles." << endl;
+        }
+    }
+
+    void secar() {
+        if (humedad >= 20) {
+            humedad -= 20;
+            cout << ">> Proceso de SECADO completado (-20% humedad)." << endl;
+        } else {
+            humedad = 0;
+            cout << ">> El jean ya esta completamente seco." << endl;
+        }
+    }
+};

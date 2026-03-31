@@ -48,8 +48,6 @@ int main() {
 }
 
 
-//Biblioteca personal
-
 #ifndef JEAN_H
 #define JEAN_H
 
@@ -90,3 +88,5 @@ public:
         }
     }
 };
+
+#endif
